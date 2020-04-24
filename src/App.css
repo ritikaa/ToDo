@@ -65,7 +65,7 @@ body {
   width: 65%;
 }
 
-.wrapper .card form input[type="checkbox"] {
+.wrapper .card form input[type="radio"] {
   width: auto;
   margin-right: 10px;
   outline: 1px solid #ffeeba;
@@ -100,19 +100,30 @@ body {
 
 .wrapper .taskList ul {
   padding: 0;
-  margin: 0;
-  display: inline-block;
-  width: 25%;
+  /*margin: 0;*/
+  /*display: inline-block;*/
+  /*width: 25%;*/
 }
-.wrapper .taskList ul li:nth-child(1) {
+.wrapper .taskList ul li:nth-child(1) span{
   background: #fff3cd;
   color: #856404;
-  /*padding: 0 30px;*/
+
 }
 .wrapper .taskList ul li {
   list-style-type: none;
   color: #5c4604;
   font-size: 1rem;
-  padding: 10px 0;
-  text-align: center;
+  line-height: 25px;
+}
+
+.wrapper .taskList ul li span{
+  padding: 10px 20px;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: justify;
+}
+
+.disabled {
+  pointer-events: none;
 }
